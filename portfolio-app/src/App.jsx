@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Works from './components/Works';
@@ -9,21 +10,22 @@ import Admin from './pages/Admin';
 
 import "./styles/layout.css";
 
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <Works />
+      <Contact />
+    </>
+  );
+}
+
 function App() {
   return (
-    <Router>
+    <Router basename="/Risa-react-apps">
       <Header />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Works />
-              <Contact />
-            </>
-          }
-        />
+        <Route path="/" element={<HomePage />} />
         <Route path="/works" element={<Works />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<Admin />} />
@@ -32,7 +34,5 @@ function App() {
     </Router>
   );
 }
-//ヘッダー部のリンクのパス
-//pathが叩かれたときに呼び出される関数
 
 export default App;
