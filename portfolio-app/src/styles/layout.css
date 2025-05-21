@@ -14,3 +14,11 @@
 .str2 {
     color: rgb(189, 226, 226)!important;
 }
+
+.BGimg {
+  background-image: url('../assets/BlueStone.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* 高さを適宜調整 */
+}
