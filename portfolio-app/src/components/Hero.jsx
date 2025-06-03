@@ -1,4 +1,5 @@
-import React from 'react';
+//自己紹介っぽいもの
+import React from "react";
 import "../styles/layout.css";
 
 const Hero = () => {

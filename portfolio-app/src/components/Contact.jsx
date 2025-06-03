@@ -1,29 +1,30 @@
-import React, { useState } from 'react';
+//お問い合わせフォーム
+import React, { useState } from "react";
 import "../styles/layout.css";
 
 const Contact = () => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!email || !message) {
-      alert('メールアドレスとメッセージを入力してください。');
+      alert("メールアドレスとメッセージを入力してください。");
       return;
     }
 
-    const savedMessages = JSON.parse(localStorage.getItem('contactMessages')) || [];
+    const savedMessages = JSON.parse(localStorage.getItem("contactMessages")) || [];
     const newEntry = {
       id: Date.now(),
       email,
       message,
     };
-    localStorage.setItem('contactMessages', JSON.stringify([...savedMessages, newEntry]));
+    localStorage.setItem("contactMessages", JSON.stringify([...savedMessages, newEntry]));
 
-    setEmail('');
-    setMessage('');
-    alert('メッセージを送信しました。');
+    setEmail("");
+    setMessage("");
+    alert("メッセージを送信しました。");
   };
 
   return (

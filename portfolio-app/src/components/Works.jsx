@@ -1,25 +1,26 @@
-import React from 'react';
+//アプリケーションリンク集
+import React from "react";
 import "../styles/layout.css";
 
 const appList = [
   {
-    title: 'レシピアプリ "SugMog"',
-    description: '冷蔵庫の食材からレシピを検索できるアプリです。',
-    image: 'https://via.placeholder.com/300',
-    link: '#', // 将来的に詳細ページとか
+    title: "レシピアプリ SugMog",
+    description: "冷蔵庫の食材からレシピを検索できるアプリです。",
+    //image: "",
+    link: "#", // 将来的に詳細ページとか
     
   },
   {
-    title: '育児記録アプリ "MamaNote"',
-    description: '子どもの成長記録を簡単に残せるアプリです。',
-    image: 'https://via.placeholder.com/300',
-    link: '#',
+    title: "育児記録アプリ MamaNote",
+    description: "子どもの成長記録を簡単に残せるアプリです。",
+    //image: "",
+    link: "#",
   },
   {
-    title: '地域イベント検索 "FamMap"',
-    description: '近くの子育てイベントをマップで探せるアプリです。',
-    image: 'https://via.placeholder.com/300',
-    link: '#',
+    title: "地域イベント検索 FamMap",
+    description: "近くの子育てイベントをマップで探せるアプリです。",
+    //image: "",
+    link: "#",
   },
 ];
 
